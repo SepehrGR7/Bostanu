@@ -11416,8 +11416,22 @@ ul {
   transition: all 0.35s;
 }
 
+#footer {
+  background: url("/dist/img/bg-software-footer-2.jpg") no-repeat center center/cover;
+  height: 380px;
+}
+
 #footer .container {
   height: 100%;
+}
+
+#footer .container .row {
+  height: 100%;
+}
+
+#footer .container #footer-social ul li {
+  float: left;
+  margin: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -11477,7 +11491,35 @@ ul {
     padding-top: 2rem;
     background: rgba(71, 184, 236, 0.171);
   }
-  #footer #address ul {
+  #footer #footer-links {
+    text-align: center !important;
+  }
+  #footer #footer-links ul {
+    padding-left: 0;
+  }
+  #footer #footer-links ul li a {
+    font-size: 1.5rem;
+  }
+  #footer #footer-social {
+    text-align: center !important;
+  }
+  #footer #footer-social ul {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #footer #footer-social ul li {
+    float: left;
+    margin: 1rem 1rem 0 1rem;
+  }
+  #footer #footer-social ul li a {
+    font-size: 1.5rem;
+  }
+  #footer #footer-address ul {
     padding: 0 1.5rem;
   }
 }

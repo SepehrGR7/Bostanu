@@ -620,10 +620,24 @@ $item-width: 38px;
 
 // Footer
 #footer {
-   // background: url('/dist/img/bg-software-footer-2.jpg') no-repeat center center/cover ;
+   background: url('/dist/img/bg-software-footer-2.jpg') no-repeat center center/cover;
+   height: 380px;
 
    .container {
       height: 100%;
+
+      .row {
+         height: 100%;
+      }
+
+      #footer-social {
+         ul {
+            li {
+               float: left;
+               margin: 1rem;
+            }
+         }
+      }
    }
 }
 
@@ -697,7 +711,35 @@ $item-width: 38px;
       padding-top: 2rem;
       background: rgba(71, 184, 236, 0.171);
 
-      #address {
+      #footer-links {
+         text-align: center !important;
+         ul {
+            padding-left: 0;
+            li {
+               a {
+                  font-size: 1.5rem;
+               }
+            }
+         }
+      }
+
+      #footer-social {
+         text-align: center !important;
+         ul {
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            li {
+               float: left;
+               margin: 1rem 1rem 0 1rem;
+               a {
+                  font-size: 1.5rem;
+               }
+            }
+         }
+      }
+
+      #footer-address {
          ul {
             padding: 0 1.5rem;
          }
