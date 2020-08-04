@@ -11,7 +11,6 @@ $sass: #e66984 !important;
 // Navbar underline variables
 $linkWidth: 65px;
 
-
 body {
    font-family: 'Maven Pro', sans-serif;
    font-weight: 400;
@@ -43,7 +42,7 @@ ul {
       color: $primary;
    }
 
-   &-info{
+   &-info {
       color: $info;
    }
 
@@ -85,7 +84,6 @@ ul {
       height: 50px;
       opacity: 0;
 
-      
       &:checked + .hamburger .line-1 {
          transform: rotate(145deg) translateY(-2px);
       }
@@ -120,7 +118,7 @@ ul {
          background: $primary;
          border-radius: 15px;
          transition: 0.8s ease;
-      } 
+      }
 
       .line-1 {
          top: 20px;
@@ -147,11 +145,10 @@ ul {
       box-shadow: 5px 0 10px rgba(146, 146, 146, 0.308);
       transform: translateX(-600px);
       transition: transform 0.8s ease;
-      
+
       div:first-child {
          margin-top: 2.2rem;
-
-      }  
+      }
 
       .theme-toggler {
          position: absolute;
@@ -228,19 +225,19 @@ ul {
    opacity: 0;
    height: 0;
    // transform: scale(0);
-   
+
    .navbar-nav {
       position: relative;
 
       li {
-         a{
+         a {
             color: $primary;
             padding-left: 0;
             padding-right: 0;
-            margin: 0 0.5rem
+            margin: 0 0.5rem;
          }
       }
-      
+
       .scroll-nav-underline {
          position: absolute;
          bottom: 6px;
@@ -262,7 +259,6 @@ ul {
          // }
       }
    }
-
 }
 
 .show-nav {
@@ -282,7 +278,7 @@ ul {
 #mainNav {
    // border-bottom: 1px solid $primary;
    transition: all 0.6s ease;
-   
+
    .navbar-brand {
       h1 {
          transition: 0.3s ease;
@@ -311,9 +307,7 @@ ul {
             letter-spacing: 1px;
          }
       }
-      
    }
-
 }
 
 // Hero
@@ -351,8 +345,8 @@ ul {
                opacity: 0;
                transform: translateY(0);
             }
-            
-            25%{
+
+            25% {
                opacity: 1;
             }
 
@@ -407,7 +401,7 @@ $item-width: 38px;
    .projects-categories {
       .nav {
          position: relative;
-         
+
          li {
             &:hover {
                cursor: pointer;
@@ -419,13 +413,10 @@ $item-width: 38px;
          }
 
          .active {
-            a{
+            a {
                color: $success;
             }
          }
-         
-        
-
 
          &-link:nth-child(1).active {
             color: $success;
@@ -439,7 +430,7 @@ $item-width: 38px;
          &-link:nth-child(4).active {
             color: $success;
          }
-         
+
          .projects-underline {
             position: absolute;
             bottom: -2px;
@@ -458,12 +449,12 @@ $item-width: 38px;
       overflow: hidden;
       border-radius: 8px;
       overflow: hidden;
-      
+
       &::after {
          content: '';
          position: absolute;
          background: $success;
-         opacity: .9;
+         opacity: 0.9;
          top: 0;
          left: 0;
          width: 100%;
@@ -491,9 +482,9 @@ $item-width: 38px;
          width: 100%;
          height: 100%;
          transition: 0.5s ease;
-         object-fit: cover;         
+         object-fit: cover;
       }
-      
+
       .projects-img-text {
          position: absolute;
          top: 0;
@@ -525,6 +516,25 @@ $item-width: 38px;
 // Skills
 #skills {
    margin-top: 6rem;
+
+   .nav {
+      position: relative;
+
+      .skills-underline-background {
+         background: #ddd;
+         width: 100%;
+         height: 2px;
+
+         .skills-underline {
+            position: absolute;
+            bottom: 0px;
+            left: 25.5px;
+            width: 40px;
+            height: 2px;
+            background: $primary;
+         }
+      }
+   }
 }
 
 // Clients
@@ -535,7 +545,7 @@ $item-width: 38px;
 
    .container {
       // margin-top: 6rem;
-      
+
       .clients-title {
          margin-bottom: 3rem;
          h2 {
@@ -617,7 +627,6 @@ $item-width: 38px;
    }
 }
 
-
 @media (max-width: 768px) {
    #mainNav {
       position: fixed;
@@ -636,12 +645,12 @@ $item-width: 38px;
                justify-content: center !important;
                // align-items: flex-start !important;
                padding-right: 0;
-   
+
                .navbar-brand {
                   // padding-top: 1rem;
                   // padding-left: 1rem;
                   margin-right: 0;
-                  
+
                   h1 {
                      font-size: 3rem;
                   }
@@ -657,7 +666,7 @@ $item-width: 38px;
 
    #services {
       height: auto;
-      margin-top: 4rem
+      margin-top: 4rem;
    }
 
    #about {
@@ -688,7 +697,6 @@ $item-width: 38px;
       padding-top: 2rem;
       background: rgba(71, 184, 236, 0.171);
 
-      
       #address {
          ul {
             padding: 0 1.5rem;
